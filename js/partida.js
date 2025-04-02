@@ -1,11 +1,10 @@
-const palavras = {
-    "Animais": ["CACHORRO", "GATO", "ELEFANTE", "CAVALO", "TIGRE", "LEÃO", "PÁSSARO"],
-    "Frutas": ["BANANA", "MAÇÃ", "UVA", "LARANJA", "ABACAXI", "MELANCIA", "MORANGO"],
-    "Países": ["BRASIL", "PORTUGAL", "ARGENTINA", "FRANÇA", "ALEMANHA", "ITÁLIA", "CANADÁ"],
-    "Objetos": ["CADEIRA", "MESA", "LIVRO", "CELULAR", "COMPUTADOR", "CANETA", "RELÓGIO"],
-    "Cores": ["VERMELHO", "AZUL", "VERDE", "AMARELO", "ROXO", "LARANJA", "PRETO"],
-    "Profissões": ["MÉDICO", "ENGENHEIRO", "PROFESSOR", "POLICIAL", "BOMBEIRO", "JORNALISTA"]
-};
+const palavras = ["CACHORRO", "GATO", "ELEFANTE", "CAVALO", "TIGRE", "LEÃO", "PÁSSARO",
+    "BANANA", "MAÇÃ", "UVA", "LARANJA", "ABACAXI", "MELANCIA", "MORANGO",
+    "BRASIL", "PORTUGAL", "ARGENTINA", "FRANÇA", "ALEMANHA", "ITÁLIA", "CANADÁ",
+    "CADEIRA", "MESA", "LIVRO", "CELULAR", "COMPUTADOR", "CANETA", "RELÓGIO",
+    "VERMELHO", "AZUL", "VERDE", "AMARELO", "ROXO", "LARANJA", "PRETO",
+    "MÉDICO", "ENGENHEIRO", "PROFESSOR", "POLICIAL", "BOMBEIRO", "JORNALISTA"
+];
 
 let palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
 let tentativas = 6;
