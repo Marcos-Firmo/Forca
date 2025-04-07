@@ -29,7 +29,7 @@ const mostrarPalavra = () =>{
 }
 
 const criarTeclado = () => {
-    const tecladoLayout = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇ".split("");
+    const tecladoLayout = "ABCDEFGHIJKLÇMNOPQRSTUVWXYZ".split("");
     const teclado = document.getElementById("teclado");
     teclado.innerHTML = "";
 
