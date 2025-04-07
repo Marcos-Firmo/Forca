@@ -6,9 +6,9 @@ const palavras = ["CACHORRO", "GATO", "ELEFANTE", "CAVALO", "TIGRE", "LEAO", "PA
     "MEDICO", "ENGENHEIRO", "PROFESSOR", "POLICIAL", "BOMBEIRO", "JORNALISTA"
 ];
 
-const palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
+let palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
 let tentativas = 6;
-const letrasCorretas = Array(palavraSecreta.length).fill("_");
+let letrasCorretas = Array(palavraSecreta.length).fill("_");
 
 const mostrarPalavra = () =>{
     
