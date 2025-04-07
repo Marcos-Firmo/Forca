@@ -10,33 +10,24 @@ const palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
 let tentativas = 6;
 const letrasCorretas = Array(palavraSecreta.length).fill("_");
 
-/*************  ✨ Windsurf Command 🌟  *************/
-/**
- * Exibe a palavra oculta
- * @function mostrarPalavra
- * @description Exibe a palavra oculta no container de id "palavra-container"
- */
-// Exibe a palavra oculta
 const mostrarPalavra = () =>{
-    // O container onde a palavra secreta ser  exibida
+    
     const container = document.getElementById("palavra-container");
-    // Limpa o container
+    
     container.innerHTML = "";
-    // Percorre cada letra da palavra secreta e exibe no container
+    
     letrasCorretas.forEach(letra => {
-        // Cria um span para cada letra
+        
         const span = document.createElement("span");
-        // Adiciona a classe "mostrar" para que a letra seja exibida
+        
         span.classList.add("mostrar");
-        // Adiciona a letra como texto do span
+        
         span.textContent = letra;
-        // Adiciona o span ao container
+        
         container.appendChild(span);
     });
 }
-/*******  199a312e-f5aa-45e9-8979-b0e5ba477763  *******/
 
-// Cria o teclado virtual
 const criarTeclado = () => {
     const tecladoLayout = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
     const teclado = document.getElementById("teclado");
@@ -51,9 +42,9 @@ const criarTeclado = () => {
     });
 }
 
-// Verifica se a letra está na palavra
+
 const verificarLetra = (letra, botao) => {
-    botao.disabled = true; // Desativa a tecla após o uso
+    botao.disabled = true; 
 
     if (palavraSecreta.includes(letra)) {
         for (let i = 0; i < palavraSecreta.length; i++) {
@@ -70,7 +61,7 @@ const verificarLetra = (letra, botao) => {
     verificarFimDeJogo();
 }
 
-// Verifica se o jogo terminou
+
 const verificarFimDeJogo = () => {
     if (!letrasCorretas.includes("_")) {
         setTimeout(() => alert("Parabéns! Você venceu!"), 200);
@@ -79,7 +70,6 @@ const verificarFimDeJogo = () => {
     }
 }
 
-// Reinicia o jogo
 const reiniciarJogo = () => {
     palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
     tentativas = 6;
