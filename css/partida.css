@@ -73,37 +73,37 @@ body {
 /*Aplicação de responsividade para plataforma mobile*/
 @media screen and (max-width: 768px) {
     .navbar ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 0 20px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+  }
 
-    .navbar ul li {
-        margin: 0;
-    }
+  .navbar ul li {
+    margin: 0;
+  }
 
-    .navbar ul .inicio {
-        order: 1;
-    }
+  .navbar ul .inicio {
+    order: 1;
+  }
 
-    .navbar ul .reiniciar {
-        order: 3;
-    }
+  .navbar ul .reiniciar {
+    order: 3;
+  }
 
-    .navbar ul .forca {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        order: 2;
-        font-size: 18px;
-    }
+  .navbar ul .forca {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    order: 2;
+    font-size: 18px;
+  }
 
-    .botao img {
-        width: 28px;
-        height: 28px;
-    }
+  .botao img {
+    width: 28px;
+    height: 28px;
+  }
 
     .container {
         padding: 0 10px;
