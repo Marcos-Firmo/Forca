@@ -72,7 +72,36 @@ body {
 
 /*Aplicação de responsividade para plataforma mobile*/
 @media screen and (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
+    .navbar ul li {
+    display: block;
+    margin: 5px 0;
+    }
+
+    .navbar ul .inicio,
+    .navbar ul .reiniciar {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    }
+
+    .navbar ul .forca {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    }
+
+    .botao img {
+    width: 30px;
+    height: 30px;
+    }
     .container {
         padding: 0 10px;
     }
