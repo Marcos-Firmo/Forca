@@ -1,7 +1,7 @@
 /*Torna a fonte Amiga Forever disponível offline, ou seja, ela é baixada em .ttf ou .woff tornando ela local*/
 @font-face {
     font-family: 'Amiga Forever';
-    src: url('../fonts/amiga-forever.ttf') format('truetype');
+    src: url('../fonte/amiga4ever.ttf') format('truetype');
 }
 
 * {
