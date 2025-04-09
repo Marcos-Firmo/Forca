@@ -72,39 +72,46 @@ body {
 
 /*Aplicação de responsividade para plataforma mobile*/
 @media screen and (max-width: 768px) {
-    .navbar ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 0 20px;
-    }
-
-    .navbar ul li {
-        margin: 0;
-    }
-
-    .navbar ul .inicio {
-        order: 1;
-    }
-
-    .navbar ul .reiniciar {
-        order: 3;
-    }
-
-    .navbar ul .forca {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        order: 2;
-        font-size: 18px;
-    }
-
-    .botao img {
-        width: 28px;
-        height: 28px;
-    }
-
+     .navbar ul {
+         display: flex;
+         flex-direction: column;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         gap: 20px; 
+         flex-wrap: wrap;
+         padding: 10px;
+     }
+ 
+     .navbar ul li {
+     display: block;
+     margin: 5px 0;
+         margin: 0; 
+     }
+ 
+     .navbar ul .inicio,
+     .navbar ul .reiniciar {
+     position: static;
+     top: auto;
+     left: auto;
+     right: auto;
+         position: static;
+     }
+ 
+     .navbar ul .forca {
+     font-size: 20px;
+     display: block;
+     text-align: center;
+         font-size: 18px;
+     }
+ 
+     .botao img {
+     width: 30px;
+     height: 30px;
+         width: 28px;
+         height: 28px;
+     }
     .container {
         padding: 0 10px;
     }
