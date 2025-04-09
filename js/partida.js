@@ -11,19 +11,12 @@ let tentativas = 6;
 let letrasCorretas = Array(palavraSecreta.length).fill("_");
 
 const mostrarPalavra = () =>{
-    
     const container = document.getElementById("palavra-container");
-    
     container.innerHTML = "";
-    
     letrasCorretas.forEach(letra => {
-        
         const span = document.createElement("span");
-        
         span.classList.add("mostrar");
-        
         span.textContent = letra;
-        
         container.appendChild(span);
     });
 }
@@ -42,9 +35,8 @@ const criarTeclado = () => {
     });
 }
 
-
 const verificarLetra = (letra, botao) => {
-    botao.disabled = true; 
+    botao.disabled = true;
 
     if (palavraSecreta.includes(letra)) {
         for (let i = 0; i < palavraSecreta.length; i++) {
@@ -61,7 +53,7 @@ const verificarLetra = (letra, botao) => {
     verificarFimDeJogo();
 }
 
-
+// Verifica se o jogo terminou
 const verificarFimDeJogo = () => {
     if (!letrasCorretas.includes("_")) {
         setTimeout(() => alert("Parabéns! Você venceu!"), 200);
@@ -70,6 +62,7 @@ const verificarFimDeJogo = () => {
     }
 }
 
+// Reinicia o jogo
 const reiniciarJogo = () => {
     palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
     tentativas = 6;

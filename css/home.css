@@ -1,4 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/amiga-forever');
+/*Torna a fonte Amiga Forever disponível offline, ou seja, ela é baixada em .ttf ou .woff tornando ela local*/
+@font-face {
+    font-family: 'Amiga Forever';
+    src: url('../fonts/amiga-forever.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url("../imagens/plano-de-fundo.avif");
@@ -22,6 +30,53 @@ main {
   overflow: hidden;
 }
 
+/*Aplicação de responsividade para plataforma mobile*/
+@media screen and (max-width: 768px) {
+    .menu {
+      margin-top: 0;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .home-container {
+      padding: 20px;
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 18px;
+      padding: 12px;
+      margin-top: 10px;
+    }
+  
+    .creditos, .tutorial {
+      width: 90%;
+      height: auto;
+      max-height: 80%;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+  
+    .creditos div:nth-of-type(2) div,
+    .tutorial div:nth-of-type(2) div {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .game-logo {
+      width: 80%;
+      height: auto;
+    }
+}
+  
 
 .game-logo {
     margin-top: 2%;
